@@ -5,7 +5,7 @@
 - It has 9 input fields taking inputs that takes the desired inputs and gives the pre required output. If there are certain discripecies in the data provided, it pops an error message.:)
 
 ## More Information
-- For more Information one can refer to the presentation [here](https://www.canva.com/design/DAEauw-BMAo/PR5uAFZJ2gXvPpgd9oSqGg/view#9)
+- For more Information one can refer to the presentation [here](https://www.canva.com/design/DAEauw-BMAo/PR5uAFZJ2gXvPpgd9oSqGg/view)
 
 ## ⭐Technologies Used
     1. ReactJs
