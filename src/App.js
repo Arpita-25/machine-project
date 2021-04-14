@@ -69,7 +69,7 @@ function App() {
       let r2 = r01 - r1;
       let isc = (x2v * x9v * x1v) / (1.732 * x8v);
       answer = (3 * isc * isc * r2) / wsc;
-      answer = Math.round(answer);
+      answer = answer.toFixed(2);;
       fans(answer);
       ans(false);
     }
