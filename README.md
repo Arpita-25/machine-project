@@ -2,7 +2,7 @@
 # 🎇Machines 2 Project
 ## About the Project
 - A web-app that reads short circuit input data, and stator side ohmic resistance measurement data in the form of Vdc and Idc, and there after calculate the starting torque of the induction motor.
-- It has 9 input fields taking inputs that takes the desired inputs and gives the pre required output. If there are certain discripecies in the data provided, it pops an error message.:)
+- It has 9 input fields taking inputs that takes the desired inputs and gives the pre required output. If there are certain discripencies in the data provided, it pops an error message.:)
 
 ## More Information
 - For more Information one can refer to the presentation [here](https://www.canva.com/design/DAEauw-BMAo/PR5uAFZJ2gXvPpgd9oSqGg/view)
