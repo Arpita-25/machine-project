@@ -8,20 +8,19 @@ import Results from "./components/Results.jsx";
 AOS.init();
 
 function App() {
-  const [x1, vrated] = useState("Vrated");
+  const [x1, vrated] = useState("V supplied");
   var answer = 0;
   const [fvalue, fans] = useState(0);
   var [fanswer, ans] = useState(true);
-  const [x2, Tr] = useState("Transformation ratio (a)");
+
   const [x3, Wr] = useState("wattmeter reading");
   const [x4, fr] = useState("Frequency");
   const [x5, poles] = useState("Poles");
   const [x6, vdc] = useState("Vdc");
   const [x7, idc] = useState("Idc");
-  const [x8, vbr] = useState("Voltage VBR(phase)");
-  const [x9, ibr] = useState("Current IBR(line)");
+  const [x8, vbr] = useState("Voltage Sc(phase)");
+  const [x9, ibr] = useState("Current Sc(line)");
   const [x1v, vratedv] = useState(0);
-  const [x2v, Trv] = useState(0);
   const [x3v, Wrv] = useState(0);
   const [x4v, frv] = useState(0);
   const [x5v, polesv] = useState(0);
@@ -32,7 +31,6 @@ function App() {
   function check(e) {
     if (
       x1v <= 0 ||
-      x2v <= 0 ||
       x3v <= 0 ||
       x4v <= 0 ||
       x5v <= 0 ||
@@ -67,6 +65,7 @@ function App() {
       let r1 = x6v / x7v;
       let r01 = x3v / (x9v * x9v);
       let r2 = r01 - r1;
+     let x2v=1;
       let isc = (x2v * x9v * x1v) / (1.732 * x8v);
       answer = (3 * isc * isc * r2) / wsc;
       answer = answer.toFixed(2);
@@ -94,10 +93,7 @@ function App() {
 
     vratedv(event.target.value);
   }
-  function Tfr(event) {
-    Tr("");
-    Trv(event.target.value);
-  }
+ 
   function Wrated(event) {
     Wr("");
     Wrv(event.target.value);
@@ -179,11 +175,7 @@ function App() {
                     <label htmlFor="">{x1}</label>
                     <span>Vrated</span>
                   </div>
-                  <div className="input-container">
-                    <input type="number" className="input" onChange={Tfr} />
-                    <label htmlFor="">{x2}</label>
-                    <span>transformation ratio (a)</span>
-                  </div>
+                 
                   <div className="input-container">
                     <input type="number" className="input" onChange={Wrated} />
                     <label htmlFor="">{x3}</label>
