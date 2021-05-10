@@ -60,16 +60,21 @@ function App() {
       });
     } else {
       e.preventDefault();
+     
       let wsc = 4 * Math.PI * x4v;
+      
       wsc = wsc / x5v;
+     
       let r1 = x6v / x7v;
       let r01 = x3v / (x9v * x9v);
       let r2 = r01 - r1;
      let x2v=1;
       let isc = (x2v * x9v * x1v) / (1.732 * x8v);
+      
       answer = (3 * isc * isc * r2) / wsc;
-      answer = answer.toFixed(2);
+      
       answer=answer*0.95;
+      answer = answer.toFixed(2);
       fans(answer);
       ans(false);
     }
