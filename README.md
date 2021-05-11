@@ -7,6 +7,9 @@
 ## More Information
 - For more Information one can refer to the presentation [here](https://www.canva.com/design/DAEauw-BMAo/PR5uAFZJ2gXvPpgd9oSqGg/view)
 
+## Website Link:
+click [here](https://electrical-machines-project.netlify.app/)
+
 ## ⭐Technologies Used
     1. ReactJs
 
